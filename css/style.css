@@ -1,0 +1,370 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+header{
+    margin: 3% 8%;
+}
+main{
+    margin: 0 auto;
+    max-width: 1440px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav h1{
+    font-size: 30px;
+    color: rgb(41, 41, 41)
+    ;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap:5%
+}
+nav ul img{
+    width: 8%;
+}
+nav ul li{
+    list-style: none;
+    padding-bottom:3px;
+    transition: 0.3s;
+}
+li:hover{
+    border-bottom: 3px solid  rgb(255, 0, 212);
+}
+li a{
+    text-decoration: none;
+    color: rgb(41, 41, 41);
+}
+.head{
+    margin-top: 13%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-side-one h1{
+    color: rgb(41, 41, 41);
+    font-size: 3.5em;
+    width: 70%;
+}
+.header-side-one p{
+    margin-top: 2%;
+    color: rgb(82, 82, 82);
+    width: 50%;
+    font-weight: 500;
+}
+button{
+    margin-top: 5%;
+    background:  rgb(255, 0, 212);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    border: none;
+    border-radius: 2.5rem;
+    transition: 0.3s;
+}
+button img{
+    width: 20%;   
+}
+
+.header-side-two{
+    position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.image-one{
+    position: relative;
+}
+.image-two{
+    position: absolute;
+}
+
+.logo{
+    margin-top: 13%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2%;
+    border-top:2px solid gray;
+    border-bottom: 2px solid gray;
+}
+.logo img{
+    width: 100%;
+    padding: 2%;
+}
+.popular-collection > h1{
+    margin-top: 8%;
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(41, 41, 41);
+}
+.product{
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3%;
+}
+.box{
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0px 30px 30px 20px rgb(0 0 0 / 8%);
+    transition: 0.3s;
+}
+.box img{
+    width: 100%;
+    transition: 0.5s;
+}
+.box h1{
+    margin-top: 20px;
+    color: rgb(41, 41, 41);
+    font-weight: 600;
+}
+.box h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 10px;
+    color: rgb(71, 71, 71);
+}
+.rating{
+    display: flex;
+    align-items: center;
+}
+.rating img{
+    width: 50%;
+}
+.rating h3{
+    margin-left: 3%;
+    font-size: 30px;
+    color: rgb(81, 81, 81);
+    font-weight: 400;
+}
+.box p{
+    width: 60%;
+    font-weight: 500;
+    color: rgb(81, 81, 81);
+}
+.box:hover > img{
+    transform: scale(1.05);
+}
+.box:hover{
+    box-shadow: 1px 1px 10px;
+}
+.arrow-two{
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.arrow-two span{
+    color:  rgb(255, 0, 212) ;
+    font-size: 22px;
+    font-weight: 600;
+}
+.arrow-two img{
+    width: 2%;
+}
+.featured{
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.photo{
+    width: 50%;
+}
+.featured-title h1{
+    color: rgb(41, 41, 41);
+    font-size: 3rem;
+}
+.btn{
+    height: 60px;
+    border-radius: 5px;
+    transition: 0.3s; 
+}
+footer{
+    background: rgb(1, 1, 32);
+}
+.footer h1{
+    padding-top: 60px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+.footer p{
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+}
+.logo-icon{
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    padding-bottom:100px
+}
+.logo-icon img{
+    padding: 5px;
+    background:white;
+    width: 2%;
+    border-radius: 50%;
+}
+button:hover{
+    background: rgb(202, 2, 169);
+}
+
+@media screen and (max-width:576px) {
+    nav{
+        flex-direction: column;
+    }
+    nav ul{
+        margin-top: 3%;
+    }
+    .head{
+        flex-direction: column;
+    }
+    .header-side-one{
+        width: 100%;
+        text-align: center;
+    }
+    .header-side-one h1{
+        font-size: 2em;
+        width: 100%;
+    }
+    .header-side-one p{
+        width: 100%;
+    }
+    .header-side-one button{
+        margin: 13% auto;
+    }
+    .header-side-two{
+        width: 80%;
+        margin-top: 70%;
+        justify-content: center;
+    }
+    .logo{
+        padding: 10% 0;
+        justify-content: center;
+        margin-top: 60%;
+        flex-wrap: wrap;
+        gap: 10PX;
+    }
+    .logo img{
+        width: 20%;
+    }
+    .product{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        gap: 10px;
+    }
+    .arrow-two{
+        justify-content: center;
+    }
+    .arrow-two img{
+        width: 5%;
+    }
+    .featured{
+        flex-direction: column;
+        text-align: center;
+        gap: 10PX;
+    }
+    .photo{
+        width: 100%;
+    }
+    .featured-title h1{
+        font-size: 1.5em;
+        padding-bottom: 20px;
+    }
+    .featured-title p{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .featured-title{
+        justify-content: center;
+    }
+    .btn{
+        margin: 3% auto;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:992px) {
+    nav{
+        flex-direction: column;
+    }
+    nav ul{
+        margin-top: 3%;
+    }
+    .head{
+        flex-direction: column;
+    }
+    .header-side-one{
+        width: 100%;
+        text-align: center;
+    }
+    .header-side-one h1{
+        font-size: 2em;
+        width: 100%;
+    }
+    .header-side-one p{
+        width: 100%;
+    }
+    .header-side-one button{
+        margin: 13% auto;
+    }
+    .header-side-two{
+        width: 80%;
+        margin-top: 70%;
+        justify-content: center;
+    }
+    .logo{
+        padding: 10% 0;
+        justify-content: center;
+        margin-top: 60%;
+        flex-wrap: wrap;
+        gap: 10PX;
+    }
+    .logo img{
+        width: 20%;
+    }
+    .product{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        gap: 10px;
+    }
+    .arrow-two{
+        justify-content: center;
+    }
+    .arrow-two img{
+        width: 5%;
+    }
+    .featured{
+        flex-direction: column;
+        text-align: center;
+        gap: 10PX;
+    }
+    .photo{
+        width: 100%;
+    }
+    .featured-title h1{
+        font-size: 1.5em;
+        padding-bottom: 20px;
+    }
+    .featured-title p{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .featured-title{
+        justify-content: center;
+    }
+    .btn{
+        margin: 3% auto;
+    }
+}
